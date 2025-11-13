@@ -1,2 +1,134 @@
-<h1>Hey, I'm Tushar 👋</h1>
-<p>More coming soon...</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tushar Mhatre — DevOps & Homelab</title>
+  <meta name="description" content="Tushar Mhatre — Full Stack Dev Trainee | Linux, DevOps, Raspberry Pi homelab" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#0f1720;
+      --muted:#9aa4b2;
+      --accent:#7c3aed;
+      --glow: 0 6px 24px rgba(124,58,237,.12);
+      --glass: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,.06), transparent), var(--bg); font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    .container{max-width:980px;margin:36px auto;padding:28px;border-radius:12px;background:var(--panel);box-shadow:var(--glow);border:1px solid rgba(255,255,255,0.03);}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:var(--accent);border:1px solid rgba(124,58,237,.12)}
+    h1{margin:0;font-size:22px}
+    .sub{color:var(--muted);margin-top:6px;font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:22px}
+    .card{padding:18px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
+    a {color:inherit;text-decoration:none}
+    .muted{color:var(--muted);font-size:13px}
+    .project{margin-bottom:12px}
+    .project h4{margin:0;font-size:15px}
+    .project p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .homelab-list{list-style:none;padding:0;margin:8px 0 0;color:var(--muted);font-size:13px}
+    .cta{display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#5b21b6);color:white;font-weight:600;margin-top:12px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .small{font-size:12px;color:var(--muted)}
+    .badge{padding:6px 8px;border-radius:6px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02);font-size:12px;color:var(--muted)}
+    pre{background:#06070a;padding:12px;border-radius:8px;overflow:auto;color:#e6eef8;font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="avatar">TM</div>
+      <div>
+        <h1>Mhatre Tushar — Full Stack Dev Trainee</h1>
+        <div class="sub">Linux tinkerer • DevOps-curious • Running a Raspberry Pi homelab • </div>
+        <div class="meta">
+          <div class="badge">Mumbai · CDAC</div>
+          <div class="badge">Raspberry Pi 4 • 2TB</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div>
+        <section class="card">
+          <h3>About</h3>
+          <p class="muted">I build small tools, learn backend systems, and obsess over stable home servers. Currently: setting up containers on a Pi, automating backups, and slowly convincing the router to behave.</p>
+          <div style="margin-top:12px;">
+            <a class="cta" href="https://github.com/mhatretush" target="_blank" rel="noopener">View my GitHub</a>
+          </div>
+          <div style="margin-top:14px" class="small">Want to see logs, dotfiles, or a writeup of my homelab? Hit the GitHub repo or ping me via email in the footer.</div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h3>Selected projects</h3>
+
+          <div class="project">
+            <h4>Online Groceries — Microservices (CDAC)</h4>
+            <p>Microservices-based shopping system (Spring Boot, Docker). I handled product-service & CI pipelines. (Repo: <span class="muted">online-shopping-microservices</span>)</p>
+          </div>
+
+          <div class="project">
+            <h4>Homelab Media Stack</h4>
+            <p>Jellyfin, Sonarr, Radarr, qBittorrent on Raspberry Pi + Docker Compose. Persistent storage on 2TB HDD.</p>
+          </div>
+
+          <div class="project">
+            <h4>Logging Setup</h4>
+            <p>Centralized logs to file with rotated backups and optional external storage. (Work-in-progress)</p>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="chip">Java</span>
+            <span class="chip">Spring</span>
+            <span class="chip">React (Vite)</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Bash</span>
+            <span class="chip">DevOps basics</span>
+            <span class="chip">Raspberry Pi</span>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Homelab snapshot</h3>
+          <ul class="homelab-list">
+            <li>Raspberry Pi 4 (8GB) • Ubuntu Server 25.04</li>
+            <li>/mnt/2tb — media + configs</li>
+            <li>Docker Compose (plugin) • containers separated</li>
+            <li>Cloudflare Tunnel for remote access</li>
+          </ul>
+
+          <div style="margin-top:10px">
+            <a href="https://mhatretush.is-a.dev" class="small">mhatretush.is-a.dev</a>
+          </div>
+
+          <div style="margin-top:12px" class="small">Contact: <a href="mailto:YOUR_EMAIL">mhatretush@gmail.com</a></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Quick commands</h3>
+          <pre>ssh pi@your-ip
+docker compose up -d
+rsync -av /mnt/drive /backup/</pre>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="small">Made with ChatGPT prompt. • <a href="https://github.com/YOUR_GITHUB_USERNAME">github.com/mhatretush</a></div>
+    </footer>
+  </div>
+</body>
+</html>
